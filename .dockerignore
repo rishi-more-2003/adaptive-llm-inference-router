@@ -1,0 +1,13 @@
+.git
+.github
+.pytest_cache
+__pycache__
+*.pyc
+.venv
+venv
+env
+runs/*
+!runs/.gitkeep
+models
+hf_cache
+pytest-cache-files-*

@@ -1,0 +1,33 @@
+model:
+  name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+  device: auto
+  dtype: auto
+
+server:
+  host: 0.0.0.0
+  port: 8000
+
+router:
+  prefix_cache_enabled: true
+  speculative_enabled: false
+  int4_gemv_enabled: true
+  vllm_enabled: false
+  reject_impossible_latency_targets: false
+  long_context_threshold_tokens: 4096
+  short_prompt_threshold_tokens: 512
+  short_decode_threshold_tokens: 256
+  tight_latency_target_ms: 1000
+
+prefix_cache:
+  prefix_chars: 1024
+  max_entries: 1000
+
+speculative:
+  draft_model_name:
+
+vllm:
+  server_url:
+  request_timeout_s: 600
+
+metrics:
+  output_path: runs/metrics.jsonl

@@ -151,6 +151,7 @@ activemq-data/
 .env
 .envrc
 .venv
+.venv-wsl/
 env/
 venv/
 ENV/
@@ -208,6 +209,15 @@ tempCodeRunnerFile.py
 
 # PyPI configuration file
 .pypirc
+
+# Project runtime artifacts
+runs/*
+!runs/.gitkeep
+pytest-cache-files-*/
+
+# Local model/cache artifacts
+models/
+hf_cache/
 
 # Marimo
 marimo/_static/

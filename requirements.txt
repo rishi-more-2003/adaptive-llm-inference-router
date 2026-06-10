@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+pyyaml
+transformers
+torch
+accelerate
+numpy
+pandas
+matplotlib
+httpx
+tqdm
+pytest
